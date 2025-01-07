@@ -13,6 +13,7 @@ WriteMakefile(
 	PREREQ_PM	=> {						# Dependencies (with versions)
 		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
 		'LWP::UserAgent' => 0,
+		'LWP::Protocol::https' => 0,
 		'JSON::XS'	   => 0
 	}, TEST_REQUIRES => {
 		'Test::DescribeMe' => 0,
