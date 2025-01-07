@@ -15,11 +15,11 @@ isa_ok($improver, 'Grammar::Improver', 'Constructor returns a Grammar::Improver 
 
 # Test grammar improvement functionality
 subtest 'Grammar improvement tests' => sub {
-    my $text = 'There are four light.';
-    my $corrected_text = $improver->improve_grammar($text);
+	my $text = 'There is four lights.';
+	my $corrected_text = $improver->improve_grammar($text);
 
-    ok($corrected_text, 'Corrected text is returned');
-    is($corrected_text, 'There are four lights.', 'Grammar is improved correctly');
+	ok($corrected_text, 'Corrected text is returned');
+	is($corrected_text, 'There are four lights.', 'Grammar is improved correctly');
 };
 
 # Test invalid input
@@ -29,13 +29,13 @@ subtest 'Error handling' => sub {
 
 # Test edge cases
 subtest 'Edge cases' => sub {
-    my $short_text = 'Hi.';
-    my $corrected_text = $improver->improve_grammar($short_text);
-    is($corrected_text, $short_text, 'Handles short input gracefully');
+	my $short_text = 'Hi.';
+	my $corrected_text = $improver->improve_grammar($short_text);
+	is($corrected_text, $short_text, 'Handles short input gracefully');
 
-    my $complex_text = 'He go to the store and buys some apples.';
-    $corrected_text = $improver->improve_grammar($complex_text);
-    like($corrected_text, qr/He goes to the store/, 'Corrects verb agreement');
+	my $complex_text = 'He go to the store and buys some apples.';
+	$corrected_text = $improver->improve_grammar($complex_text);
+	like($corrected_text, qr/He goes to the store/, 'Corrects verb agreement');
 };
 
 done_testing();

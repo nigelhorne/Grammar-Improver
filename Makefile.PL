@@ -11,10 +11,11 @@ WriteMakefile(
 		? ('LICENSE'=> 'GPL')
 		: ()),
 	PREREQ_PM	=> {						# Dependencies (with versions)
+		'Carp' => 0,
 		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
 		'LWP::UserAgent' => 0,
 		'LWP::Protocol::https' => 0,
-		'JSON::XS'	   => 0
+		'JSON::XS'	=> 0
 	}, TEST_REQUIRES => {
 		'Test::DescribeMe' => 0,
 		'Test::Most' => 0,
