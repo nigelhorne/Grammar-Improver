@@ -95,27 +95,27 @@ sub improve_grammar {
 	);
 
 	# Check for errors
-	if ($response->is_success) {
-		my $response_content = $response->decoded_content;
-		my $response_data = decode_json($response_content);
-
-		# ::diag(Data::Dumper->new([$response_data])->Dump());
-
-		# Apply corrections
-		foreach my $match (reverse @{ $response_data->{matches} }) {
-			my $offset = $match->{offset};
-			my $length = $match->{length};
-			my $replacement = $match->{replacements}[0]{value} || '';
-
-			# print "offset = $offset, length = $length, replacement = $replacement\n";
-
-			# Apply replacement to text
-			substr($text, $offset, $length, $replacement);
-		}
-		return $text;
-	} else {
+	if(!$response->is_success()) {
 		Carp::croak('Error: ', $response->status_line());
 	}
+
+	my $response_content = $response->decoded_content;
+	my $response_data = decode_json($response_content);
+
+	# ::diag(Data::Dumper->new([$response_data])->Dump());
+
+	# Apply corrections
+	foreach my $match (reverse @{ $response_data->{matches} }) {
+		my $offset = $match->{offset};
+		my $length = $match->{length};
+		my $replacement = $match->{replacements}[0]{value} || '';
+
+		# print "offset = $offset, length = $length, replacement = $replacement\n";
+
+		# Apply replacement to text
+		substr($text, $offset, $length, $replacement);
+	}
+	return $text;
 }
 
 =head1 AUTHOR
