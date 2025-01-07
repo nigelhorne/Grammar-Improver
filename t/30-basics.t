@@ -1,15 +1,15 @@
 use strict;
 use warnings;
 use Test::Most;
-use GrammarImprover;
+use Grammar::Improver;
 
-# Create an instance of GrammarImprover
-my $improver = GrammarImprover->new(
-    api_url => 'https://api.languagetool.org/v2/check',
+# Create an instance of Grammar::Improver
+my $improver = Grammar::Improver->new(
+	# api_url => 'https://api.languagetool.org/v2/check',
 );
 
 # Basic test: Constructor
-isa_ok($improver, 'GrammarImprover', 'Constructor returns a GrammarImprover object');
+isa_ok($improver, 'Grammar::Improver', 'Constructor returns a Grammar::Improver object');
 
 # Test grammar improvement functionality
 subtest 'Grammar improvement tests' => sub {
