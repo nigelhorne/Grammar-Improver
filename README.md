@@ -23,10 +23,6 @@ Version 0.01
 
 The `Grammar::Improver` module interfaces with the LanguageTool API to analyze and improve grammar in text input.
 
-# AUTHOR
-
-Nigel Horne <njh@bandsman.co.uk>
-
 # METHODS
 
 ## new
@@ -41,3 +37,7 @@ Creates a new `Grammar::Improver` object.
 
 Analyzes, improves and corrects the grammar of the input text.
 Returns the corrected text.
+
+# AUTHOR
+
+Nigel Horne <njh@bandsman.co.uk>
