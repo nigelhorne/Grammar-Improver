@@ -19,6 +19,18 @@ WriteMakefile(
 	((defined($ExtUtils::MakeMaker::VERSION) && ($ExtUtils::MakeMaker::VERSION >= 6.3002))
 		? ('LICENSE'=> 'GPL')
 		: ()),
+	META_MERGE => {
+		resources => {
+			repository => {
+				type => 'git',
+				url => 'https://github.com/nigelhorne/Grammar-Improver.git',
+				web => 'https://github.com/nigelhorne/Grammar-Improver',
+			},
+			bugtracker => {
+				web => 'https://github.com/nigelhorne/Grammar-Improver/issues',
+			},
+		},
+	},
 	PREREQ_PM	=> {						# Dependencies (with versions)
 		'Carp' => 0,
 		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
