@@ -1,4 +1,15 @@
 ---
+name: Grammar::Improver
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  # workflow_dispatch:
+  pull_request:
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -6,17 +17,17 @@ jobs:
       matrix:
         perl-version: ['5.30', '5.32', '5.34']
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Perl
-      uses: shogo82148/actions-setup-perl@v1
-      with:
-        perl-version: ${{ matrix.perl-version }}
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: ${{ matrix.perl-version }}
 
-    - name: Install dependencies
-      run: |
-        cpanm --notest --quiet --installdeps .
+      - name: Install dependencies
+        run: |
+          cpanm --notest --quiet --installdeps .
 
-    - name: Run tests
-      run: prove -lr t
+      - name: Run tests
+        run: prove -lr t
