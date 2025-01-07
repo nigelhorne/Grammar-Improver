@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 use strict;
 use warnings;
 use Test::Most;
@@ -13,16 +15,16 @@ isa_ok($improver, 'Grammar::Improver', 'Constructor returns a Grammar::Improver 
 
 # Test grammar improvement functionality
 subtest 'Grammar improvement tests' => sub {
-    my $text = 'This are a sample text with mistake.';
+    my $text = 'There are four light.';
     my $corrected_text = $improver->improve_grammar($text);
 
     ok($corrected_text, 'Corrected text is returned');
-    is($corrected_text, 'This is a sample text with mistake.', 'Grammar is improved correctly');
+    is($corrected_text, 'There are four lights.', 'Grammar is improved correctly');
 };
 
 # Test invalid input
 subtest 'Error handling' => sub {
-    throws_ok { $improver->improve_grammar('') } qr/Text input is required/, 'Dies on empty input';
+	throws_ok { $improver->improve_grammar('') } qr/Text input is required/, 'Dies on empty input';
 };
 
 # Test edge cases
