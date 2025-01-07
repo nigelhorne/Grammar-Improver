@@ -35,10 +35,6 @@ our $VERSION = '0.01';
 
 The C<Grammar::Improver> module interfaces with the LanguageTool API to analyze and improve grammar in text input.
 
-=head1 AUTHOR
-
-Nigel Horne <njh@bandsman.co.uk>
-
 =head1 METHODS
 
 =head2 new
@@ -95,13 +91,13 @@ sub improve_grammar {
 	my $response = $ua->post(
 		$self->{api_url},
 		Content_Type => 'application/x-www-form-urlencoded',
-		Content	=> $payload,
+		Content => $payload,
 	);
 
 	# Check for errors
 	if ($response->is_success) {
 		my $response_content = $response->decoded_content;
-		my $response_data	= decode_json($response_content);
+		my $response_data = decode_json($response_content);
 
 		# ::diag(Data::Dumper->new([$response_data])->Dump());
 
@@ -121,6 +117,12 @@ sub improve_grammar {
 		Carp::croak('Error: ', $response->status_line());
 	}
 }
+
+=head1 AUTHOR
+
+Nigel Horne <njh@bandsman.co.uk>
+
+=cut
 
 1;
 
