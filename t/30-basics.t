@@ -5,10 +5,11 @@ use warnings;
 
 use Test::Most;
 use Test::RequiresInternet ('api.languagetool.org' => 'https');
+use Test::Warnings;
 
 BEGIN {
 	plan(skip_all => 'NO_NETWORK_TESTING set') if $ENV{'NO_NETWORK_TESTING'};
-	plan(tests => 5);
+	plan(tests => 6);
 	use_ok('Grammar::Improver')
 }
 

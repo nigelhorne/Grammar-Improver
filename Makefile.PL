@@ -42,6 +42,7 @@ WriteMakefile(
 		'Test::Most' => 0,
 		'Test::Needs' => 0,
 		'Test::RequiresInternet' => 0,
+		'Test::Warnings' => 0
 	}, dist => $dist,
 	clean	 => {
 		FILES => 'Grammar-Improver-*',
