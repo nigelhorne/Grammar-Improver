@@ -12,6 +12,7 @@ Version 0.01
 
     my $improver = Grammar::Improver->new(
             api_url => 'https://api.languagetool.org/v2/check',
+            api_key => $ENV{'LANGUAGETOOL_KEY'},
     );
 
     my $text = 'This are a sample text with mistake.';
