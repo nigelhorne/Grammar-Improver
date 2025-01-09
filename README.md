@@ -4,7 +4,7 @@ Grammar::Improver - A Perl module for improving grammar using LanguageTool API.
 
 # VERSION
 
-Version 0.01
+Version 0.02
 
 # SYNOPSIS
 

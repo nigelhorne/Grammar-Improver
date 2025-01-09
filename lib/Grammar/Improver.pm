@@ -12,11 +12,11 @@ Grammar::Improver - A Perl module for improving grammar using LanguageTool API.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -79,7 +79,7 @@ sub improve_grammar {
 
 	# Create the request payload
 	my $payload = {
-		text	 => $text,
+		text => $text,
 		language => 'en-US',
 	};
 
