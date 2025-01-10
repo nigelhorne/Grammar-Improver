@@ -3,6 +3,7 @@ package Grammar::Improver;
 use strict;
 use warnings;
 use Carp;
+use LWP::Protocol::https;
 use LWP::UserAgent;
 use JSON::MaybeXS;
 

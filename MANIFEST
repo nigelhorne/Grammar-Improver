@@ -15,4 +15,5 @@ t/eol.t
 t/fixme.t
 t/manifest.t
 t/modules-used.t
+t/pod-cm.t
 t/pod-coverage.t

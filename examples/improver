@@ -9,11 +9,11 @@ use Grammar::Improver;
 
 # Initialize the Grammar::Improver module
 my $improver = Grammar::Improver->new(
-	api_url => 'https://api.languagetool.org/v2/check',
+	# api_url => 'https://api.languagetool.org/v2/check',
 );
 
 # Example text
-my $text = 'This are a sample text with mistake.';
+my $text = join(' ', @ARGV);
 
 # Improve grammar
 my $corrected_text = $improver->improve_grammar($text);
