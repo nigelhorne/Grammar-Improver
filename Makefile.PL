@@ -2,6 +2,14 @@ use strict;
 use warnings;
 use ExtUtils::MakeMaker;
 
+# Test for broken smokers that don't set AUTOMATED_TESTING
+if(my $reporter = $ENV{'PERL_CPAN_REPORTER_CONFIG'}) {
+	if($reporter =~ /smoker/i) {
+		warn 'AUTOMATED_TESTING added for you' if(!defined($ENV{'AUTOMATED_TESTING'}));
+		$ENV{'AUTOMATED_TESTING'} = 1;
+	}
+}
+
 my $dist = {
 	COMPRESS => 'gzip -9f', # Compress tarball using gzip
 	SUFFIX => 'gz',	# File suffix for tarball
