@@ -22,23 +22,11 @@ if($^O eq 'darwin') {
 WriteMakefile(
 	NAME	 => 'Grammar::Improver',		# Name of the module
 	VERSION_FROM => 'lib/Grammar/Improver.pm',	# Automatically fetch version from the module
-	AUTHOR	=> 'Nigel Horne <njh@bandsman.co.uk>', # Author information
+	AUTHOR	=> 'Nigel Horne <njh@nigelhorne.com>', # Author information
 	ABSTRACT	 => 'A Perl module for improving grammar using an external API.',
 	((defined($ExtUtils::MakeMaker::VERSION) && ($ExtUtils::MakeMaker::VERSION >= 6.3002))
 		? ('LICENSE'=> 'GPL')
 		: ()),
-	META_MERGE => {
-		resources => {
-			repository => {
-				type => 'git',
-				url => 'https://github.com/nigelhorne/Grammar-Improver.git',
-				web => 'https://github.com/nigelhorne/Grammar-Improver',
-			},
-			bugtracker => {
-				web => 'https://github.com/nigelhorne/Grammar-Improver/issues',
-			},
-		},
-	},
 	PREREQ_PM	=> {						# Dependencies (with versions)
 		'Carp' => 0,
 		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
@@ -54,5 +42,22 @@ WriteMakefile(
 	}, dist => $dist,
 	clean	 => {
 		FILES => 'Grammar-Improver-*',
-	}
+	}, META_MERGE => {	# https://perldoc.perl.org/CPAN::Meta::Spec
+		'meta-spec' => { version => 2 },
+		resources => {
+			homepage => 'https://metacpan.org/pod/Grammar::Improver',
+			repository => {
+				repository => 'https://github.com/nigelhorne/Grammar-Improver',
+				type => 'git',
+				url => 'git://github.com/nigelhorne/Grammar-Improver.git',
+				web => 'https://github.com/nigelhorne/Grammar-Improver'
+			}, bugtracker => {
+				mailto => 'bug-Grammar-Improver@rt.cpan.org',
+				url => 'https://github.com/nigelhorne/Grammar-Improver/issues',
+				# web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Grammar-Improver',
+				web => 'https://github.com/nigelhorne/Grammar-Improver/issues'
+			}
+		},
+	},
+	MIN_PERL_VERSION	=> '5.008'
 );

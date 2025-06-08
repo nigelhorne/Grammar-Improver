@@ -122,7 +122,7 @@ sub improve_grammar {
 
 =head1 AUTHOR
 
-Nigel Horne <njh@bandsman.co.uk>
+Nigel Horne <njh@nigelhorne.com>
 
 =cut
 
