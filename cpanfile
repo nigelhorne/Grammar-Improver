@@ -8,6 +8,7 @@ requires 'JSON::MaybeXS';
 requires 'LWP::Protocol::https';
 requires 'LWP::UserAgent';
 requires 'Params::Get';
+requires 'Params::Validate::Strict';
 
 on 'test' => sub {
 	requires 'Test::DescribeMe';
