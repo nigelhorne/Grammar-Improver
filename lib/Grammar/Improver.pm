@@ -57,12 +57,30 @@ sub new {
 	}, $class;
 }
 
-=head2 improve_grammar
+=head2 improve_grammar($text)
 
   my $corrected_text = $improver->improve_grammar($text);
 
-Analyzes, improves and corrects the grammar of the input text.
-Returns the corrected text.
+Analyzes, improves and corrects the grammar of the input string.
+Returns the corrected string.
+
+=head3 API SPECIFICATION
+
+=head4 INPUT
+
+  {
+    text => {
+      type => 'string',
+      position => 0,
+      optional => 0
+    }
+  }
+
+=head4 OUTPUT
+
+  {
+    type => 'string',
+  }
 
 =cut
 
@@ -119,6 +137,10 @@ sub improve_grammar {
 	}
 	return $text;
 }
+
+=head1 SUPPORT
+
+This module is provided as-is without any warranty.
 
 =head1 AUTHOR
 

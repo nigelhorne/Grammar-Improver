@@ -32,13 +32,35 @@ The `Grammar::Improver` module interfaces with the LanguageTool API to analyze a
 
 Creates a new `Grammar::Improver` object.
 
-## improve\_grammar
+## improve\_grammar($text)
 
     my $corrected_text = $improver->improve_grammar($text);
 
-Analyzes, improves and corrects the grammar of the input text.
-Returns the corrected text.
+Analyzes, improves and corrects the grammar of the input string.
+Returns the corrected string.
+
+### API SPECIFICATION
+
+#### INPUT
+
+    {
+      text => {
+        type => 'string',
+        position => 0,
+        optional => 0
+      }
+    }
+
+#### OUTPUT
+
+    {
+      type => 'string',
+    }
+
+# SUPPORT
+
+This module is provided as-is without any warranty.
 
 # AUTHOR
 
-Nigel Horne <njh@bandsman.co.uk>
+Nigel Horne <njh@nigelhorne.com>
