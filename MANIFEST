@@ -18,6 +18,7 @@ t/manifest.t
 t/modules-used.t
 t/pod-cm.t
 t/pod-coverage.t
+t/pod-synopsis.t
 t/pod.t
 t/unused.t
 t/vars.t
