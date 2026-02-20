@@ -1,5 +1,7 @@
 ---
 name: Grammar::Improver
+permissions:
+  contents: read
 
 on:
   push:
