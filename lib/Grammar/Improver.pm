@@ -51,7 +51,7 @@ Creates a new C<Grammar::Improver> object.
 
 # Constructor
 sub new {
-	my $class = shift;
+	my $class = shift || __PACKAGE__;
 
 	# Handle hash or hashref arguments
 	my $params = Params::Get::get_params(undef, @_) || {};
@@ -151,7 +151,13 @@ This module is provided as-is without any warranty.
 
 Nigel Horne <njh@nigelhorne.com>
 
-=cut
+=head1 SEE ALSO
+
+=over 4
+
+=item * L<Test Dashboard|https://nigelhorne.github.io/Grammar-Improver/coverage/>
+
+=back
 
 1;
 

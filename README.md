@@ -64,3 +64,11 @@ This module is provided as-is without any warranty.
 # AUTHOR
 
 Nigel Horne <njh@nigelhorne.com>
+
+# SEE ALSO
+
+- [Test Dashboard](https://nigelhorne.github.io/Grammar-Improver/coverage/)
+
+1;
+
+\_\_END\_\_

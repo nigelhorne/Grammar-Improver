@@ -56,6 +56,12 @@
 \bcover_db\b
 \bcovered\b
 
+# Avoid Devel::Cover and Devel::CoverX::Covered files.
+\bcover_db\b
+\bcover_html\b
+\bcoverage_history\b
+\bcovered\b
+
 # Avoid MYMETA files
 ^MYMETA\.
 #!end included /usr/local/perls/perl-5.18.1/lib/5.18.1/ExtUtils/MANIFEST.SKIP
