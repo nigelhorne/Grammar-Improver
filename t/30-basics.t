@@ -38,11 +38,11 @@ subtest 'Error handling' => sub {
 # Test edge cases
 subtest 'Edge cases' => sub {
 	my $short_text = 'Hi.';
-	my $corrected_text = $improver->improve_grammar($short_text);
+	my $corrected_text = $improver->improve_grammar(text => $short_text);
 	is($corrected_text, $short_text, 'Handles short input gracefully');
 
 	my $complex_text = 'He go to the store and buys some apples.';
-	$corrected_text = $improver->improve_grammar($complex_text);
+	$corrected_text = $improver->improve_grammar({ text => $complex_text });
 	like($corrected_text, qr/He goes to the store/, 'Corrects verb agreement');
 };
 

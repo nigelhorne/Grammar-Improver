@@ -8,6 +8,7 @@ use JSON::MaybeXS;
 use LWP::Protocol::https;
 use LWP::UserAgent;
 use Params::Get;
+use Params::Validate::Strict;
 
 =head1 NAME
 
@@ -76,7 +77,6 @@ Returns the corrected string.
   {
     text => {
       type => 'string',
-      position => 0,
       optional => 0
     }
   }
@@ -90,7 +90,19 @@ Returns the corrected string.
 =cut
 
 sub improve_grammar {
-	my ($self, $text) = @_;
+	my $self = shift;
+
+	my $args = Params::Validate::Strict::validate_strict({
+		args => Params::Get::get_params('text', \@_) || {},
+		schema => {
+			text => {
+				type => 'string',
+				optional => 0
+			}
+		}
+	});
+
+	my $text = $args->{text};
 
 	Carp::croak('Text input is required') unless $text;
 
