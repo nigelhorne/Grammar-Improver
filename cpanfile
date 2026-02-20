@@ -7,6 +7,7 @@ requires 'ExtUtils::MakeMaker', '6.64';
 requires 'JSON::MaybeXS';
 requires 'LWP::Protocol::https';
 requires 'LWP::UserAgent';
+requires 'Params::Get';
 
 on 'test' => sub {
 	requires 'Test::DescribeMe';
