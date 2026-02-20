@@ -1,6 +1,6 @@
 Changes
 cpanfile
-examples/improver
+bin/improver
 lib/Grammar/Improver.pm
 LICENSE
 Makefile.PL

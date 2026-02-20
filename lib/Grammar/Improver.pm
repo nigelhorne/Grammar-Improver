@@ -2,10 +2,12 @@ package Grammar::Improver;
 
 use strict;
 use warnings;
+
 use Carp;
+use JSON::MaybeXS;
 use LWP::Protocol::https;
 use LWP::UserAgent;
-use JSON::MaybeXS;
+use Params::Get;
 
 =head1 NAME
 
@@ -49,11 +51,14 @@ Creates a new C<Grammar::Improver> object.
 
 # Constructor
 sub new {
-	my ($class, %args) = @_;
+	my $class = shift;
+
+	# Handle hash or hashref arguments
+	my $params = Params::Get::get_params(undef, @_) || {};
 
 	return bless {
-		api_url => $args{api_url} || 'https://api.languagetool.org/v2/check',	# LanguageTool API
-		api_key => $args{api_key},	# Optional API key
+		api_url => $params->{api_url} || 'https://api.languagetool.org/v2/check',	# LanguageTool API
+		api_key => $params->{api_key},	# Optional API key
 	}, $class;
 }
 

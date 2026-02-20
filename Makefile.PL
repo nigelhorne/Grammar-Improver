@@ -27,12 +27,14 @@ WriteMakefile(
 	((defined($ExtUtils::MakeMaker::VERSION) && ($ExtUtils::MakeMaker::VERSION >= 6.3002))
 		? ('LICENSE'=> 'GPL')
 		: ()),
+	EXE_FILES => ['bin/improver'],
 	PREREQ_PM	=> {						# Dependencies (with versions)
 		'Carp' => 0,
 		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
 		'LWP::UserAgent' => 0,
 		'LWP::Protocol::https' => 0,
-		'JSON::MaybeXS'	=> 0
+		'JSON::MaybeXS'	=> 0,
+		'Params::Get' => 0
 	}, TEST_REQUIRES => {
 		'Test::DescribeMe' => 0,
 		'Test::Most' => 0,
