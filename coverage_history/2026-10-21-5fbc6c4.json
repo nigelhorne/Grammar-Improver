@@ -1,0 +1,395 @@
+{
+   "runs" : [
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575284.34995,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575284.34968,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575284.50723,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575284.50704,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575284.66496,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575284.66466,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575284.82379,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575284.82351,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575284.98386,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575284.98364,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575285.143,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575285.14279,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575285.30081,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575285.30062,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575285.45968,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575285.45949,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575285.63307,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575285.62567,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575285.85072,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575285.85025,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575290.1555,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575286.03789,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575286.17861,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "-e",
+         "start" : 1792575286.17851,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575286.35824,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/10-compile.t",
+         "start" : 1792575286.35821,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575286.69606,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/20-new.t",
+         "start" : 1792575286.69518,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575286.987,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/30-basics.t",
+         "start" : 1792575286.98677,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575287.2192,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/comment-spelling.t",
+         "start" : 1792575287.219,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575287.44164,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/cover.t",
+         "start" : 1792575287.44141,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575287.66657,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/critic.t",
+         "start" : 1792575287.66638,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575287.89242,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/eof.t",
+         "start" : 1792575287.89224,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575288.11465,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/eol.t",
+         "start" : 1792575288.11446,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575288.33718,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/fixme.t",
+         "start" : 1792575288.33699,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575288.56062,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/manifest.t",
+         "start" : 1792575288.56043,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575288.78264,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/modules-used.t",
+         "start" : 1792575288.78246,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575289.0046,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/pod-cm.t",
+         "start" : 1792575289.0044,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575289.22722,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/pod-coverage.t",
+         "start" : 1792575289.22703,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575289.44942,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/pod-synopsis.t",
+         "start" : 1792575289.44923,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575289.67269,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/pod.t",
+         "start" : 1792575289.6725,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575289.89437,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/unused.t",
+         "start" : 1792575289.89418,
+         "version" : "0.02"
+      },
+      {
+         "OS" : "linux",
+         "abstract" : "A Perl module for improving grammar using LanguageTool API.",
+         "dir" : "/home/runner/work/Grammar-Improver/Grammar-Improver",
+         "finish" : 1792575290.1186,
+         "name" : "Grammar-Improver",
+         "perl" : "5.40.5",
+         "run" : "t/vars.t",
+         "start" : 1792575290.1184,
+         "version" : "0.02"
+      }
+   ],
+   "summary" : {
+      "Total" : {
+         "branch" : {
+            "covered" : 0,
+            "error" : 6,
+            "percentage" : 0,
+            "total" : 6,
+            "uncoverable" : 0
+         },
+         "condition" : {
+            "covered" : 4,
+            "error" : 6,
+            "percentage" : 40,
+            "total" : 10,
+            "uncoverable" : 0
+         },
+         "statement" : {
+            "covered" : 27,
+            "error" : 21,
+            "percentage" : 56.25,
+            "total" : 48
+         },
+         "subroutine" : {
+            "covered" : 9,
+            "error" : 1,
+            "percentage" : 90,
+            "total" : 10
+         },
+         "total" : {
+            "covered" : 40,
+            "error" : 34,
+            "percentage" : 54.0540540540541,
+            "total" : 74,
+            "uncoverable" : 0
+         }
+      },
+      "blib/lib/Grammar/Improver.pm" : {
+         "branch" : {
+            "covered" : 0,
+            "error" : 6,
+            "percentage" : 0,
+            "total" : 6,
+            "uncoverable" : 0
+         },
+         "condition" : {
+            "covered" : 4,
+            "error" : 6,
+            "percentage" : 40,
+            "total" : 10,
+            "uncoverable" : 0
+         },
+         "statement" : {
+            "covered" : 27,
+            "error" : 21,
+            "percentage" : 56.25,
+            "total" : 48
+         },
+         "subroutine" : {
+            "covered" : 9,
+            "error" : 1,
+            "percentage" : 90,
+            "total" : 10
+         },
+         "total" : {
+            "covered" : 40,
+            "error" : 34,
+            "percentage" : 54.0540540540541,
+            "total" : 74,
+            "uncoverable" : 0
+         }
+      }
+   }
+}
